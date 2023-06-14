@@ -1,16 +1,18 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <h1 className="text-white bg-yellow-950 text-3xl font-bold">
-        Hello Next World
-      </h1>
-    </main>
+    <>
+      <Head>
+        <title>User Dashboard</title>
+      </Head>
+      <main className="bg-gray-100 min-h-screen">
+        <Header />
+        <h1 className="text-black  text-3xl font-bold p-10">
+          Hello Next World
+        </h1>
+      </main>
+    </>
   );
 }
