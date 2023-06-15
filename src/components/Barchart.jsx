@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -17,10 +18,12 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-const Barchart = () => {
+
+const BarChart = () => {
   const [chartData, setChartData] = useState({
     datasets: [],
   });
+
   const [chartOptions, setChartOptions] = useState({});
 
   useEffect(() => {
@@ -49,6 +52,7 @@ const Barchart = () => {
       responsive: true,
     });
   }, []);
+
   return (
     <>
       <div className="w-full md:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white">
@@ -58,4 +62,4 @@ const Barchart = () => {
   );
 };
 
-export default Barchart;
+export default BarChart;

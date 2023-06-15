@@ -1,4 +1,5 @@
-import Barchart from "@/components/Barchart";
+import BarChart from "@/components/Barchart";
+// import Barchart from "@/components/Barchart";
 import Header from "@/components/Header";
 import RecentOrders from "@/components/RecentOrders";
 import TopCards from "@/components/TopCards";
@@ -14,7 +15,7 @@ export default function Home() {
         <Header />
         <TopCards />
         <div className="p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
-          <Barchart />
+          <BarChart />
           <RecentOrders />
         </div>
       </main>
